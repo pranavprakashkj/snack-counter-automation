@@ -1,0 +1,22 @@
+{
+  "name": "snack-counter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Snack counter refill automation: lifecycle, buyer selection and budget check, with simulated chat and HR systems.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "demo": "node src/demo.ts",
+    "demo:web": "vite web --port 5173"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vite": "^7.3.0",
+    "vitest": "^3.0.0"
+  }
+}

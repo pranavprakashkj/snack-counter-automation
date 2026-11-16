@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snack Counter Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <strong>Snack Counter</strong>
+        <span class="muted">A simulated month at both offices: the real service code, with fake chat, HR and clock</span>
+      </div>
+      <div class="controls">
+        <button id="prev" type="button" aria-label="Previous step">← Back</button>
+        <span id="counter" class="muted"></span>
+        <button id="next" type="button" class="primary" aria-label="Next step">Next →</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <nav class="steps" aria-label="Steps"><ol id="steps"></ol></nav>
+
+      <section class="stage">
+        <div class="step-head">
+          <h1 id="title"></h1>
+          <p id="time" class="muted"></p>
+          <ul id="notes" class="notes"></ul>
+        </div>
+
+        <div class="panels">
+          <section class="panel">
+            <h2># oslo-snacks</h2>
+            <div class="feed" id="feed-OSL"></div>
+          </section>
+          <section class="panel">
+            <h2># bengaluru-snacks</h2>
+            <div class="feed" id="feed-BLR"></div>
+          </section>
+          <section class="panel">
+            <h2>Direct messages from the bot</h2>
+            <div class="feed" id="feed-dm"></div>
+          </section>
+        </div>
+
+        <section id="report" class="report" hidden></section>
+      </section>
+    </main>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
